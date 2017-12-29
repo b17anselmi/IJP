@@ -1,4 +1,6 @@
-// given a grade, output pass || fail, program ends at input -1
+/* given a grade, output pass || fail, program ends at input -1
+ * exercise 5.1
+ */
 import java.util.Scanner;
 
 public class PassFail {
@@ -16,7 +18,7 @@ public class PassFail {
 		int i = 0;//keeps program from running infinitely
 		while(score!=-1 && i<1) {
 			i++;//without this line, loop prints pass || fail infinitely
-			if(score>60) {
+			if(score>=60) {
 			System.out.println("Pass");
 			}
 			else {

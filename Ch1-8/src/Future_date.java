@@ -14,7 +14,7 @@ public class Future_date {
 		fut_day = (day + input.nextInt()) % 7;		
 		
 		//now we have to turn our numbers into strings for both today and future day
-		String today, future;
+		String today = "", future = "";
 		
 		if (day == 0) {
 			today = "Sunday";
@@ -73,7 +73,7 @@ public class Future_date {
 		}
 		//and now finally we can output our results
 		System.out.println("Today is "+ today + " and the future day is "+ future);
-
+		input.close();
 		}
 		//program is doing what it's supposed to, but for some reason getting an initialization error even though I specifically made them strings on line 17
 

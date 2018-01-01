@@ -1,4 +1,4 @@
-/*display a pyramid
+/*Exercise 5.19, display a pyramid
  * 			1
  * 		1	3	1
  * 1		3	9	3	1

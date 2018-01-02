@@ -10,7 +10,7 @@ public class IntFactors {
 		int f=2;//all integers are divisible by 1, and initiating at 0 would break things (domain errors)
 		do {
 			if (num%f==0) {//if our factor goes perfectly into the number
-				System.out.println(f+", ");//print it
+				System.out.println(f);//print it
 				num/=f;//and update the number
 			}
 			else {f++;}//otherwise, test the next integer

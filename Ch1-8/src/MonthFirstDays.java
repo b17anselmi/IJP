@@ -97,7 +97,7 @@ public class MonthFirstDays {
 			    break;
 			   }
 			 
-			   System.out.println(Month + " 1st, " + year + " is " + Day);//results
+			   System.out.println(Month + " 1st, " + year + " is " + Day);//results 
 			   day += len;//get the next month's 1st day number by adding the length of the current month to the current day
 			   month++;//go to the next month
 			  }while(month<=12);//end loop after all 12 months

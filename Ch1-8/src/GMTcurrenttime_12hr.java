@@ -36,10 +36,9 @@ public class GMTcurrenttime_12hr {
 	    if (currentHour <=0) {
 	    	currentHour+=12;
 	    }
-	    if (currentHour<12) {
+	    if (currentHour<12 || currentHour>12) {
 	    	currentHour = currentHour%12;
 	    }
-
 	    // Display results
 	    System.out.println("Current time is " + GMTHour + ":" + currentMinute + ":" + currentSecond + " GMT"+"\n");
 	    System.out.println("Current time at your location is:" + currentHour+ ":" + currentMinute + ":" + currentSecond);

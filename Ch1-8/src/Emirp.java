@@ -6,14 +6,14 @@ public class Emirp {
 		do{
 		if (emirp(i)) { 
 			System.out.printf("%10d", i);
-            c++;
+            c++;//count printed items
             if (c % 10 == 0 && i != 0) System.out.println();//next line after 10 items printed
 		}
 		i++;
 		}while(c<=120);
 
 	}
-	public static boolean emirp(long n) {
+	public static boolean emirp(long n) {//create a method to test if emirp==true using other methods
 		if ((!PalidromeInt.isPalindrome(n)&&(PalindromePrimes.Prime(n))&&PalindromePrimes.Prime(PalidromeInt.reverse(n)))) 
 		return true;
 		else {

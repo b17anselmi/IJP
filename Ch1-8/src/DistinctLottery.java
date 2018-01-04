@@ -1,6 +1,6 @@
 //Exercise 5.32, revised listing 3.8 to make sure two lottery numbers between 1-49 are different
 import java.util.Scanner;
-import java.util.Random;
+import java.util.Random;//using random because it's easier than math class for this
 public class DistinctLottery {
 
 	public static void main(String[] args) {
@@ -9,6 +9,7 @@ public class DistinctLottery {
 		while(lottery%11==0) {//generate a new lottery number if the two digits aren't distinct (i.e. 22, 33, 44)
 			lottery = r.nextInt(49) + 1;
 		}
+		//user guess
 		System.out.println("Enter your guess (2 digits)");
 		Scanner input = new Scanner(System.in);
 		int guess = input.nextInt();
@@ -21,7 +22,7 @@ public class DistinctLottery {
 		 
 		 System.out.println("The lottery number is " + lottery);
 		 
-		 //now let's check what the user guessed
+		 //check what the user guessed
 		 if (guess == lottery) {
 			 System.out.println("Exact match: you win $12,000!");
 		 }

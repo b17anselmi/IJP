@@ -21,11 +21,12 @@ public class Mean_SD {
 			SDsum+=Math.pow((data[k]- mean), 2);//get
 		}
 		
-		double SDmean = SDsum/10.0;
+		double SDmean = SDsum/(data.length-1);
 		double StandDev = Math.pow(SDmean, 0.5);
 		
 		System.out.println("Standard Deviation  = " + StandDev);
 //off by 0.2, probably math error
+		//maybe should be 10-1, give it a try
 	}
 
 }

@@ -27,6 +27,7 @@ public class Mean_SD {
 		System.out.println("Standard Deviation  = " + StandDev);
 //off by 0.2, probably math error
 		//maybe should be 10-1, give it a try
+		//yep
 	}
 
 }
